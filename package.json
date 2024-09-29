@@ -1,0 +1,38 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "Application de scraping d'offres d'emploi et d'envoi automatique de CV",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts"
+  },
+  "keywords": [
+    "scraping",
+    "jobs",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/node-cron": "^3.0.0",
+    "@types/nodemailer": "^6.4.16",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7",
+    "puppeteer": "^23.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "json2csv": "6.0.0-alpha.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.15",
+    "puppeteer": "^23.4.1",
+    "xlsx": "^0.18.5"
+  }
+}
